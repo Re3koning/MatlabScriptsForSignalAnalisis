@@ -1,0 +1,7 @@
+%Heaviside's Laplace transform
+syms t a; 
+assume(a > 0); %When you're asked Re>0 you assume heaviside as A
+f=heaviside((t+1)-a)
+F=laplace(f)
+%simplify(ans)
+%pretty(ans)

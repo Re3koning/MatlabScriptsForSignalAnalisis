@@ -1,0 +1,4 @@
+%Calculate a signal's power
+sinal= %Your exercise here
+Energia=sum(abs(sinal).^2)
+Potencia=Energia/length(n)

@@ -1,0 +1,7 @@
+%Laplace inverse through the residues method
+%X=OG top expression
+%Y=OG bottom expression
+x = [10 16]
+y = [1 6 8 0]
+[r,p,k] = residue(x,y)
+%Observe which pole in P is the respective R value that matches it (R is A, B and C, and K is the quoeficient)

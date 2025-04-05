@@ -1,0 +1,10 @@
+%Other method to check for parity
+x=-pi:.001:pi;
+f=@(x)%((t^4)+(t^2)-1)*cos(t);
+if isequal(f(x),f(-x))
+    even_odd=2;%even
+elseif isequal(-f(x),f(-x))
+    even_odd=1;%odd
+else
+    even_odd=0;%neither
+end

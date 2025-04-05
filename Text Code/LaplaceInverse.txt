@@ -1,0 +1,7 @@
+%Code for the Laplace inverse
+syms t s;
+F=%your exercise here, example: ((3*s-1)/((s^2)+(3*s)+(2)))
+ilaplace(F)
+%simplify(ans)
+%pretty(ans)
+simplifyFraction(ans)

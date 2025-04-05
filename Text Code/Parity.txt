@@ -1,0 +1,5 @@
+%Parity
+% Check if the continuous signal is EVEN -> x(t) = x(-t)
+par=logical %Your exercise here, example: (cos(pi*n)+sin(2*pi*n)==cos(pi*(-n))+sin(2*pi*(-n)))
+% Check if the continuous signal is ODD -> x(t) = -x(-t)
+impar=logical( %O teu script aqui cos(pi*n)+sin(2*pi*n)==-(cos(pi*(-n))+sin(2*pi*(-n))))

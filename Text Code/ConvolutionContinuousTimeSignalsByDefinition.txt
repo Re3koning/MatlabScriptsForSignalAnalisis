@@ -1,0 +1,22 @@
+%Convolution for continuous time signals through definition (also works for discrete)
+clear all
+syms tau t s
+h_1(t) = %your exercise here, example: 2*exp(-2*t)*heaviside(t)
+h_2(t) = %your exercise here, example: exp(-t)*heaviside(t)
+F(t) = int(h_1(tau)*h_2(t-tau),tau,-inf,+inf) %when they're paralel: h(t)=h1+h2, in series:h(t)=h1*h2
+%simplify(F)
+%expand(F)
+
+F = rewrite(F, "heaviside") %Possibly can be ommited
+F = expand(F)
+F = simplify(F)
+
+
+H_1 = laplace(h_1);
+H_2 = laplace(h_2);
+
+H = H_1 * H_2;
+
+h(t) = ilaplace(H)*heaviside(t) %Possibly can be ommited
+h(t) = simplify(h)
+logical(F==h)

@@ -1,0 +1,6 @@
+%Code to check for even or odd components
+%Formulas: x(t)=xpar(t)+ximpar(t) e x(-t)=xpar(-t)+ximpar(-t) e x(-t)=xpar(t)-ximpar(t)
+syms n
+x=%Your exercise here, example: dirac(n)+dirac(n-1)
+xpar=%Your exercise here, example: 0.5*dirac(n+1)+dirac(n)+0.5*dirac(n-1)
+x-xpar
